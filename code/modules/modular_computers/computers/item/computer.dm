@@ -288,7 +288,7 @@
 		to_chat(user, span_notice("You insert \the [inserting_id] into the card slot."))
 		balloon_alert(user, "inserted ID")
 
-	playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
+	playsound(src, 'modular_zubbers/sound/machines/id_insert.ogg', 50, FALSE) // BUBBER EDIT: Soundening: ORIGNAL: playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
 
 	if(ishuman(loc))
 		var/mob/living/carbon/human/human_wearer = loc
@@ -322,7 +322,7 @@
 
 	if(!silent && !isnull(user))
 		to_chat(user, span_notice("You remove the card from the card slot."))
-		playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
+		playsound(src, 'modular_zubbers/sound/machines/id_eject.ogg', 50, FALSE) // BUBBER EDIT: Soundening: ORIGNAL: playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
 		balloon_alert(user, "removed ID")
 
 	if(ishuman(loc))

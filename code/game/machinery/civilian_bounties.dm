@@ -241,14 +241,19 @@
 		return FALSE
 
 	if(target)
+		/* BUBBER EDIT START: Soundening: ORIGINAL:
 		if(holder_item && inserting_item.InsertID(target))
-			playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
+			 ORIGNAL: playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
 		else
 			id_eject(user, target)
+		*/
+		if(!holder_item || !inserting_item.InsertID(target))
+			id_eject(user, target)
+		// BUBBER EDIT END (What is this code doing?? Why is it playing the insert sound twice?)
 
 	user.visible_message(span_notice("[user] inserts \the [card_to_insert] into \the [src]."),
 						span_notice("You insert \the [card_to_insert] into \the [src]."))
-	playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
+	playsound(src, 'modular_zubbers/sound/machines/id_insert.ogg', 50, FALSE) // BUBBER EDIT: Soundening: ORIGNAL: playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
 	ui_interact(user)
 	return TRUE
 
@@ -263,7 +268,7 @@
 			user.put_in_hands(target)
 		user.visible_message(span_notice("[user] gets \the [target] from \the [src]."), \
 							span_notice("You get \the [target] from \the [src]."))
-		playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
+		playsound(src, 'modular_zubbers/sound/machines/id_eject.ogg', 50, FALSE) // BUBBER EDIT: Soundening: ORIGNAL: playsound(src, 'sound/machines/terminal/terminal_insert_disc.ogg', 50, FALSE)
 		inserted_scan_id = null
 		return TRUE
 

@@ -105,6 +105,12 @@
 					'modular_skyrat/modules/black_mesa/sound/explosions/explode6.ogg',
 					'modular_skyrat/modules/black_mesa/sound/explosions/explode7.ogg',
 				)
+			if(SFX_CLICK_BUTTON)
+				soundin = pick(
+					'modular_zubbers/sound/machines/switch1.ogg',
+					'modular_zubbers/sound/machines/switch2.ogg',
+					'modular_zubbers/sound/machines/switch3.ogg',
+				)
 	return soundin
 
 // This is an atom level variable to prevent extensive typechecking for impacts.

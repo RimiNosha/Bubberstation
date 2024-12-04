@@ -339,6 +339,7 @@
 						return
 					holder.add_reagent(reagent, to_dispense, reagtemp = dispensed_temperature, added_purity = base_reagent_purity)
 
+					playsound(src, 'modular_zubbers/sound/machines/reagent_dispense.ogg', 25, 1) // BUBBER EDIT ADDITION: Soundening
 					work_animation()
 			else
 				recording_recipe[reagent_name] += amount

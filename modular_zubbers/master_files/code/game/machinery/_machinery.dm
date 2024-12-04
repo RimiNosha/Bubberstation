@@ -1,6 +1,6 @@
 /obj/machinery
 	/// The sound that plays on UI interaction.
-	var/act_sound = 'modular_zubbers/sound/machines/pda_click.ogg'
+	var/act_sound = SFX_SMALL_BUTTON
 	/// If TRUE, plays the interaction sound to the current mob only.
 	var/act_sound_local = FALSE
 

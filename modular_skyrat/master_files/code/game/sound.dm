@@ -107,9 +107,16 @@
 				)
 			if(SFX_CLICK_BUTTON)
 				soundin = pick(
-					'modular_zubbers/sound/machines/switch1.ogg',
-					'modular_zubbers/sound/machines/switch2.ogg',
-					'modular_zubbers/sound/machines/switch3.ogg',
+					'modular_zubbers/sound/machines/button/switch1.ogg',
+					'modular_zubbers/sound/machines/button/switch2.ogg',
+					'modular_zubbers/sound/machines/button/switch3.ogg',
+				)
+			if(SFX_SMALL_BUTTON)
+				soundin = pick(
+					'modular_zubbers/sound/machines/button/button1.ogg',
+					'modular_zubbers/sound/machines/button/button2.ogg',
+					'modular_zubbers/sound/machines/button/button3.ogg',
+					'modular_zubbers/sound/machines/button/button4.ogg',
 				)
 	return soundin
 

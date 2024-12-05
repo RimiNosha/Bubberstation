@@ -130,6 +130,7 @@
 	max_slots = src.max_slots,
 	max_specific_storage = src.max_specific_storage,
 	max_total_storage = src.max_total_storage,
+	rustle_sound, // BUBBER EDIT ADDITION: Soundening
 )
 	if(!istype(parent))
 		stack_trace("Storage datum ([type]) created without a [isnull(parent) ? "null parent" : "invalid parent ([parent.type])"]!")
@@ -142,6 +143,7 @@
 	src.max_slots = max_slots
 	src.max_specific_storage = max_specific_storage
 	src.max_total_storage = max_total_storage
+	src.rustle_sound = rustle_sound// BUBBER EDIT ADDITION: Soundening: Done here to make the changes easier to trace.
 
 /datum/storage/Destroy()
 

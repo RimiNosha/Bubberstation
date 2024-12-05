@@ -16,7 +16,7 @@
 	if(atom_storage)
 		QDEL_NULL(atom_storage)
 
-	atom_storage = new storage_type(src, max_slots, max_specific_storage, max_total_storage)
+	atom_storage = new storage_type(src, max_slots, max_specific_storage, max_total_storage, rustle_sound) // BUBBER EDIT: Soundening: ORIGINAL: atom_storage = new storage_type(src, max_slots, max_specific_storage, max_total_storage)
 
 	if(canhold || canthold)
 		atom_storage.set_holdable(canhold, canthold)

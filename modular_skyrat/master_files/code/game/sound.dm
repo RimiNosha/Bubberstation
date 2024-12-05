@@ -118,6 +118,17 @@
 					'modular_zubbers/sound/machines/button/button3.ogg',
 					'modular_zubbers/sound/machines/button/button4.ogg',
 				)
+			if(SFX_GENERIC_PICKUP)
+				soundin = pick(
+					'modular_zubbers/sound/items/handling/generic_pickup1.ogg',
+					'modular_zubbers/sound/items/handling/generic_pickup2.ogg',
+					'modular_zubbers/sound/items/handling/generic_pickup3.ogg',
+				)
+			if(SFX_GENERIC_DROP)
+				soundin = pick(
+					'modular_zubbers/sound/items/handling/generic_drop1.ogg',
+					'modular_zubbers/sound/items/handling/generic_drop2.ogg',
+				)
 	return soundin
 
 // This is an atom level variable to prevent extensive typechecking for impacts.

@@ -720,7 +720,13 @@
 	item_flags &= ~IN_INVENTORY
 	SEND_SIGNAL(src, COMSIG_ITEM_DROPPED, user)
 	if(!silent)
+		/* BUBBER EDIT START: Soundening
 		playsound(src, drop_sound, DROP_SOUND_VOLUME, vary = sound_vary, ignore_walls = FALSE)
+		*/
+		if(full_drop_sound && should_play_full_sound(user))
+			playsound(src, full_drop_sound, DROP_SOUND_VOLUME, ignore_walls = FALSE)
+		else if (drop_sound)
+			playsound(src, drop_sound, DROP_SOUND_VOLUME, ignore_walls = FALSE)
 	user?.update_equipment_speed_mods()
 
 /// called just as an item is picked up (loc is not yet changed)
@@ -881,7 +887,13 @@
 		if(throw_drop_sound)
 			playsound(src, throw_drop_sound, YEET_SOUND_VOLUME, ignore_walls = FALSE, vary = sound_vary)
 			return
+		/* BUBBER EDIT START: Soundening
 		playsound(src, drop_sound, YEET_SOUND_VOLUME, ignore_walls = FALSE, vary = sound_vary)
+		*/
+		if(full_drop_sound && length(contents))
+			playsound(src, full_drop_sound, YEET_SOUND_VOLUME, ignore_walls = FALSE)
+		else if(drop_sound)
+			playsound(src, drop_sound, YEET_SOUND_VOLUME, ignore_walls = FALSE)
 		return
 	var/volume = get_volume_by_throwforce_and_or_w_class()
 	if (throwforce > 0 || HAS_TRAIT(src, TRAIT_CUSTOM_TAP_SOUND))

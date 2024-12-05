@@ -1,0 +1,14 @@
+fridge_open and fridge_close is adapted from "Fridge door open close.wav" under the CC0 License
+https://freesound.org/people/curara/sounds/556983/
+glass_pane_pickup is adapted from "Tapping, Window, Single, A.wav" under the CC Attribution 4.0 License
+https://freesound.org/people/InspectorJ/sounds/318929/
+can_drop is adapted from "Open Can Drop - Low Reverb" under the CC Attribution 3.0 License
+https://freesound.org/people/deleted_user_7709760/sounds/461973/
+glass_pane_drop, metal_pickup, and metal_drop are adapted from "Handling Metal Sheet 1" under the CC0 License
+https://freesound.org/people/Sheyvan/sounds/522926/
+wood_drop is adapted from "malexmedia_woodbangA.wav" under the CC Attribution 4.0 License
+https://freesound.org/people/malexmedia/sounds/31814/
+breaker_off is adpted from "Circuit Breaker 3 DP.wav" under the CC0 License
+https://freesound.org/people/sribubba/sounds/130154
+breaker_on is adpted from "Circuit Breaker 2 DP.wav" under the CC0 License
+https://freesound.org/people/sribubba/sounds/130153

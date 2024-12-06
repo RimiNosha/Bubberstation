@@ -147,6 +147,7 @@
 		stored_id_card = O
 		O.add_fingerprint(user)
 		update_appearance(UPDATE_ICON)
+		playsound(src, 'modular_zubbers/sound/machines/id_insert.ogg', 75, TRUE) // BUBBER EDIT ADDITION: Soundening
 		return
 
 	return ..()
